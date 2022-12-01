@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: #88CFF0;
+  }
+  #title {
+    position: relative;
+    margin-right: 90px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 4rem;
+    color: #455359;
+    transition: all .4s ease-in-out;
+  }
+  h1:hover {
+    color: #8A462F;
+    transform: scale(2.1);
+}
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vh;
+    height: 50vh;
+  }
+  .cell {
+    width: 20vh;
+    height: 20vh;
+    font-size: 12vh;
+    border: 3px solid #455359;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .cell:first-child, .cell:nth-child(2), .cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+.cell:nth-child(3n+3) {
+    border-right: none;
+}
+
+.cell:last-child, .cell:nth-child(8), .cell:nth-child(7) {
+    border-bottom: none;
+}
+#player-turn, button {
+margin-top: 100px;
+padding-right: 90px;
+}
